@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import * as ExcelJS from 'exceljs';
 import './App.css'
 
 function App() {
@@ -9,8 +10,11 @@ function App() {
 
     if (file) {
       try {
-        const text = await file.text();
-        const data = parseCSV(text);
+        const workbook = new ExcelJS.Workbook();
+        await workbook.xlsx.load(file);
+
+        const worksheet = workbook.worksheets[0];
+        const data = parseExcel(worksheet)
         setActivities(data);
       } catch (error) {
         console.log('Error reading the file', error);
@@ -18,15 +22,19 @@ function App() {
     }
   };
 
-  const parseCSV = (csvText) => {
-    const lines = csvText.split('\n');
-    const headers = lines[0].split(',');
-    const data = lines.slice(1).map((line) => {
-      const values = line.split(',');
-      return headers.reduce((obj, header, index) => {
-        obj[header.trim()] = values[index].trim();
-        return obj;
-      }, {});
+  const parseExcel = (worksheet) => {
+    const data = [];
+
+    worksheet.eachRow((row, rowNumber) => {
+      if (rowNumber !== 1) {
+        const rowData = {};
+        row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+          const header = worksheet.getCell(1, colNumber).value;
+          rowData[header] = cell.value;
+        });
+
+        data.push(rowData);
+      }
     });
 
     return data;
@@ -36,8 +44,18 @@ function App() {
 
   return (
     <div>
+      <h2>Resultados Ejercicio</h2>
+      <ul>
+        {activities.length === 0 ?
+          <p>Cargue su archivo de excel para continuar</p> :
+          activities.map((activity, index) => (
+            <p key={index} className='border-2 border-blue-500'>
+              <li>Time in secons: {activity.StartTimeInSeconds}</li>
+            </p>
+          ))
+        }
+      </ul>
       <input type="file" onChange={handleUploadFile} />
-
     </div>
   )
 }
