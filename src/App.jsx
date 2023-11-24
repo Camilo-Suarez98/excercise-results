@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import * as ExcelJS from 'exceljs';
 import './App.css'
+import Results from './components/Results';
+import Loader from './components/Loader'
 
 function App() {
-  const [activities, setActivities] = useState([])
+  const [activities, setActivities] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleUploadFile = async (e) => {
     const file = e.target.files[0];
 
     if (file) {
       try {
+        setLoading(true)
         const workbook = new ExcelJS.Workbook();
         await workbook.xlsx.load(file);
 
@@ -18,6 +22,8 @@ function App() {
         setActivities(data);
       } catch (error) {
         console.log('Error reading the file', error);
+      } finally {
+        setLoading(false)
       }
     }
   };
@@ -40,37 +46,24 @@ function App() {
     return data;
   };
 
+  if (loading) {
+    return <Loader />
+  }
+
   console.log(activities);
 
   return (
     <div>
-      <h2>Resultados Ejercicio</h2>
-      <div>
+      <h2 className='text-4xl my-5'>VerifyFit</h2>
+      <div className='flex gap-3 flex-wrap justify-center'>
         {activities.length === 0 ?
           <p>Cargue su archivo de excel para continuar</p> :
-          activities.slice(0, 30).map((activity, index) => {
-            const time = new Date(activity.StartTimeInSeconds * 1000)
-            const day = time.getDate()
-            const month = time.getMonth() + 1
-            const year = time.getFullYear()
-            const minute = time.getMinutes()
-            const hour = time.getHours()
-            return (
-              <div key={index} className='border-2 border-blue-500'>
-                <p>Fecha: {day}/{month}/{year} {hour}:{minute}</p>
-                <p>Duración: {(activity.DurationInSeconds / 3600).toFixed(2)} horas</p>
-                <p>Distancia: {activity.DistanceInMeters} metros</p>
-                <p>Ritmo promedio: {activity.AveragePaceInMinutesPerKilometer.toFixed(2)} km/m</p>
-                <p>Pasos: {activity.Steps}</p>
-                <p>Pomedio de velocidad: {activity.DistanceInMeters} m/s</p>
-                <p>Ascenso total: {activity.TotalElevationGainInMeters} m</p>
-                <p>Ritmo cardíaco: {activity.AverageHeartRateInBeatsPerMinute} p/m</p>
-              </div>
-            )
-          })
+          <Results activities={activities} />
         }
       </div>
-      <input type="file" onChange={handleUploadFile} />
+      <div className='mt-6'>
+        <input type="file" onChange={handleUploadFile} />
+      </div>
     </div>
   )
 }
