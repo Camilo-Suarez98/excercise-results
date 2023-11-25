@@ -3,21 +3,21 @@ const isSuspiciousSpeed = (activity) => {
   const maxSpeed = 3.5;
 
   const averageSpeed = activity.AverageSpeedInMetersPerSecond;
-  console.log('averageSpeed', averageSpeed > minSpeed && averageSpeed < maxSpeed);
+  // console.log('averageSpeed', averageSpeed > minSpeed && averageSpeed < maxSpeed);
   return averageSpeed > minSpeed && averageSpeed < maxSpeed;
 };
 
 const isSuspiciousPace = (activity) => {
   const averagePace = activity.AveragePaceInMinutesPerKilometer;
-  console.log('paceInMinutes', averagePace);
-  console.log('averagePace', averagePace > 4 && averagePace < 6);
+  // console.log('paceInMinutes', averagePace);
+  // console.log('averagePace', averagePace > 4 && averagePace < 6);
   return averagePace > 4 && averagePace < 6;
 }
 
 const isSuspiciousDurationAndDistance = (activity) => {
   const calculatedSpeed = activity.DistanceInMeters / activity.DurationInSeconds;
-  console.log('calculatedSpeed', calculatedSpeed);
-  console.log('isSuspiciousDurationAndDistance', Math.abs(activity.AverageSpeedInMetersPerSecond - calculatedSpeed) > 0.5);
+  // console.log('calculatedSpeed', calculatedSpeed);
+  // console.log('isSuspiciousDurationAndDistance', Math.abs(activity.AverageSpeedInMetersPerSecond - calculatedSpeed) > 0.5);
   return Math.abs(activity.AverageSpeedInMetersPerSecond - calculatedSpeed) > 0.5;
 };
 
