@@ -55,7 +55,7 @@ function App() {
   return (
     <div>
       <h2 className='text-4xl my-5'>VerifyFit</h2>
-      <div className='flex gap-3 flex-wrap justify-center'>
+      <div>
         {activities.length === 0 ?
           <p>Cargue su archivo de excel para continuar</p> :
           <Results activities={activities} />
