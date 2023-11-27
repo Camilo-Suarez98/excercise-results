@@ -11,7 +11,7 @@ const ExerciseCard = ({ activity }) => {
   const hour = time.getHours();
 
   return (
-    <div className={`p-3 ${validActivity ? 'bg-green-500' : 'bg-red-500'}`}>
+    <div className={`p-3 ${validActivity ? 'bg-green-500' : 'bg-yellow-500'}`}>
       <p>Fecha: {day}/{month}/{year} {hour}:{minute}</p>
       <p>
         Duración: {(activity.DurationInSeconds / 60).toFixed(2)} Minutos
