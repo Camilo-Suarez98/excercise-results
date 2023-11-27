@@ -50,7 +50,7 @@ Una vez ahí, ejectura el siguiente comando
 npm run dev
 ```
 
-## Authors ✒️
+## Autor ✒️
 
 - **Camilo Suarez** - _Developer_ - [https://github.com/Camilo-Suarez98](https://github.com/Camilo-Suarez98)
 
