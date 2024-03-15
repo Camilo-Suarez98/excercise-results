@@ -6,7 +6,7 @@ import FormExercise from './components/FormExercise';
 import Conditions from './components/Conditions';
 import UploadFile from './components/UploadFile';
 import ManuallyData from './components/ManuallyData';
-import { ActivitiesContext } from './Context/UploadFileContext';
+import { ActivitiesContext } from './context/UploadFileContext';
 
 function App() {
   const { activities, form, loading, handleUploadFile, handleShowForm } = useContext(ActivitiesContext);
