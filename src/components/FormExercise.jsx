@@ -34,7 +34,7 @@ const FormExercise = () => {
       AveragePaceInMinutesPerKilometer: 0,
       TotalElevationGainInMeters: 0,
       AverageHeartRateInBeatsPerMinute: 0
-    })
+    });
   };
 
   return (
@@ -67,7 +67,7 @@ const FormExercise = () => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default FormExercise;

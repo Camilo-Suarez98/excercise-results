@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import ExerciseCard from "./ExerciseCard";
+import Button from "./Button";
 
 const Results = ({ activities }) => {
   const firstData = 30;
@@ -28,8 +29,8 @@ const Results = ({ activities }) => {
         }
       </div>
       <div className="mt-10 flex justify-center gap-5">
-        <button onClick={showMoreInfo} className="bg-green-500">Ver más</button>
-        <button onClick={showLessInfo} className="bg-red-500">Ver menos</button>
+        <Button onClick={showMoreInfo} bgColor="bg-green-500" text="Ver más" />
+        <Button onClick={showLessInfo} bgColor="bg-red-500" text="Ver menos" />
       </div>
     </>
   )

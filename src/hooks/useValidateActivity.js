@@ -5,7 +5,7 @@ const isSuspiciousSpeed = (activity) => {
   const averageSpeed = activity.AverageSpeedInMetersPerSecond;
   return averageSpeed < minSpeed
     && averageSpeed > maxSpeed
-    || averageSpeed === null
+    || averageSpeed === null;
 };
 
 const isSuspiciousPace = (activity) => {
