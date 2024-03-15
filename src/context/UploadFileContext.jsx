@@ -48,7 +48,7 @@ export const ActivitiesProvider = ({ children }) => {
   };
 
   const handleShowForm = () => {
-    if (form) {
+    if (!form) {
       setForm(true);
     } else {
       setForm(false);
