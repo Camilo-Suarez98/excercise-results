@@ -2,7 +2,7 @@
 
 Este proyecto fue desarrollado utilizando ReactJS junto con TailwindCSS para el desarrollo frontend.
 
-## Caracteristicas del proyecto:
+## Características del proyecto:
 - Es una aplicación que permite adjuntar archivos de excel para verificar multiples resultados.
 - Permite ingresar los datos de forma manual.
 
@@ -10,7 +10,7 @@ Este proyecto fue desarrollado utilizando ReactJS junto con TailwindCSS para el 
 
 Estas instrucciones te permitirán obtener una copia del proyecto en tu local, para desarrollo o testing. 
 
-### instalación 🔧
+### Instalación 🔧
 
 1. Clona el repositorio en tu local: 
 ```
@@ -25,7 +25,7 @@ cd excercise-results
 
 3. Instala las dependencias:
 
-Asegurate de tener instalado Node.js:
+Asegúrate de tener instalado Node.js:
 
 ```
 sudo apt install nodejs npm
@@ -44,7 +44,7 @@ Asegurate de estar en el directorio correcto
 cd excercise-results
 ```
 
-Una vez ahí, ejectura el siguiente comando
+Una vez ahí, ejecuta el siguiente comando
 
 ```
 npm run dev
@@ -55,7 +55,7 @@ npm run dev
 - **Camilo Suarez** - _Developer_ - [https://github.com/Camilo-Suarez98](https://github.com/Camilo-Suarez98)
 
 
-### Funcionamiento de la aplicaión
+### Funcionamiento de la aplicación
 
 La aplicación permite adjuntar un archivo de excel con información de multiples resultados. Esta es la vista principal
 
