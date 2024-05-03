@@ -36,7 +36,7 @@ sudo apt install nodejs npm
 npm install
 ```
 
-54. Corre el codigo!
+5. Corre el codigo!
 
 Asegurate de estar en el directorio correcto
 
