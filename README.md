@@ -50,6 +50,11 @@ Una vez ahí, ejecuta el siguiente comando
 npm run dev
 ```
 
+## Built with 🛠️:
+
+- React: [https://react.dev/](https://react.dev/)
+- TailwindCSS [https://tailwindcss.com/](https://tailwindcss.com/)
+
 ## Autor ✒️
 
 - **Camilo Suarez** - _Developer_ - [https://github.com/Camilo-Suarez98](https://github.com/Camilo-Suarez98)
