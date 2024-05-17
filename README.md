@@ -62,32 +62,31 @@ npm run dev
 
 The app allows you to attach an excel file to verify multiple results with the info. This is the main view:
 
-<img width="818" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/ab79db3c-0823-4405-bc4c-42dc7b00e70f">
-
+<img width="603" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/1c336cb3-e82e-4e43-a26a-67069f9d5f6b">
 
 This is what the app looks like when the excel file is attached, starts with a loader to analyze the results:
 
-<img width="599" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/e3e14f7d-54a4-478a-8f63-2e4c8df52aaf">
+<img width="601" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/0a02755c-008f-43d8-92bb-242c94282b4a">
 
 And this is what the app looks like when you load the files (Desktop view):
 
-<img width="993" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/0b770424-c1df-4c9e-b237-226def37e749">
+<img width="1015" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/ab657207-74dd-4ed4-95e8-b5bfaea8b826">
 
 This is what the app looks like when you load the files (Mobile view):
 
-<img width="380" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/93074a6a-6be9-4b07-a5e8-0277ea5d8937">
+<img width="335" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/17a02d7e-79c7-4000-901a-835d6808da4f">
 
 This is what it looks like when there is data that may be fake:
 
-<img width="911" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/8e8d2b52-ca32-4f5c-b236-999f01611800">
+<img width="957" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/65ead6b3-b39f-4d1a-9afc-fc69e3e6f11b">
 
 Initially you can see the first 30 results, but you have a button to see more:
 
-<img width="902" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/474504c2-26ec-463c-adcf-e2b556ba0881">
+<img width="975" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/852456ed-8003-49d9-bf6b-7c0360bfadc0">
 
 If the user wants to enter the data manually he/she can do by filling in the following form:
 
-<img width="679" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/139e609c-98bf-4bba-b340-5c5e63c492cb">
+<img width="530" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/5eff483b-2e2b-4560-941c-c09d0ff6f21e">
 
 Here you can see the result below the form when entering data:
 
