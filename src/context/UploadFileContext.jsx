@@ -3,7 +3,6 @@ import * as ExcelJS from 'exceljs';
 
 export const ActivitiesContext = createContext();
 
-// eslint-disable-next-line react/prop-types
 export const ActivitiesProvider = ({ children }) => {
   const [activities, setActivities] = useState([]);
   const [form, setForm] = useState(false);
@@ -59,6 +58,6 @@ export const ActivitiesProvider = ({ children }) => {
     <ActivitiesContext.Provider value={{ activities, form, loading, handleUploadFile, handleShowForm }}>
       {children}
     </ActivitiesContext.Provider>
-  )
+  );
 };
 

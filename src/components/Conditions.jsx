@@ -2,14 +2,14 @@ const Conditions = () => {
   return (
     <>
       <p>
-        Si el cuadro es color {" "}
-        <span className="bg-green-500 p-1">verde</span>
-        {" "} significa que los datos son reales
+        If the box is color {" "}
+        <span className="bg-green-500 p-1">Green</span>
+        {" "} it means that the data is real
       </p>
       <p className="mt-2 mb-5">
-        Si es de color {" "}
-        <span className="bg-red-500 p-1">amarillo</span>
-        {" "} significa que alguno de los datos no parecen reales
+        If the color is {" "}
+        <span className="bg-red-500 p-1">Red</span>
+        {" "} it means that some of the data does not look real
       </p>
     </>
   );

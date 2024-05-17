@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import useValidateActivity from "../hooks/useValidateActivity"
+import useValidateActivity from "../hooks/useValidateActivity";
 
 const ExerciseCard = ({ activity }) => {
   const validActivity = useValidateActivity(activity);
@@ -14,17 +13,26 @@ const ExerciseCard = ({ activity }) => {
     AverageHeartRateInBeatsPerMinute
   } = activity;
 
+  const formatNumber = (num) => {
+    return (
+      num !== null
+        && num !== undefined
+        ? num.toFixed(2)
+        : '0.00'
+    )
+  };
+
   return (
     <div className={`p-3 ${!validActivity ? 'bg-green-500' : 'bg-red-500'}`}>
-      <p>Duración: {DurationInSeconds} s</p>
-      <p>Distancia: {DistanceInMeters} m</p>
-      <p>Ritmo promedio: {AveragePaceInMinutesPerKilometer} m/km</p>
-      <p>Pasos: {Steps}</p>
-      <p>Promedio de velocidad: {AverageSpeedInMetersPerSecond} m/s</p>
-      <p>Ascenso total: {TotalElevationGainInMeters} m</p>
-      <p>Ritmo cardíaco: {AverageHeartRateInBeatsPerMinute} ppm</p>
+      <p>Duration: {formatNumber(DurationInSeconds) / 60} min</p>
+      <p>Distance: {formatNumber(DistanceInMeters)} m</p>
+      <p>Average Pace: {formatNumber(AveragePaceInMinutesPerKilometer)} m/km</p>
+      <p>Steps: {Steps}</p>
+      <p>Average Speed: {formatNumber(AverageSpeedInMetersPerSecond)} m/s</p>
+      <p>Total Elevation: {formatNumber(TotalElevationGainInMeters)} m</p>
+      <p>Average Heart Rate: {AverageHeartRateInBeatsPerMinute} ppm</p>
     </div>
-  )
+  );
 };
 
 export default ExerciseCard;

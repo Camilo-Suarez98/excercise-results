@@ -15,7 +15,7 @@ const isSuspiciousPace = (activity) => {
     && averagePace > 6
     || averagePace === null
     || averagePace === 0;
-}
+};
 
 const isSuspiciousDurationAndDistance = (activity) => {
   const calculatedSpeed = activity.DistanceInMeters / activity.DurationInSeconds;

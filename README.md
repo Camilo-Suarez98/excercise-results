@@ -1,51 +1,49 @@
-# Verificador de resultados de ejercicio 🏃🏃‍♀️
+# Exercise Result Checker 🏃🏃‍♀️
 
-Este proyecto fue desarrollado utilizando ReactJS junto con TailwindCSS para el desarrollo frontend.
+This project  was developed using ReactJS with TailwindCSS for the Front End.
 
-## Características del proyecto:
-- Es una aplicación que permite adjuntar archivos de excel para verificar multiples resultados.
-- Permite ingresar los datos de forma manual.
+## Characteristics of the project:
+- It is an app that allows you to attach an excel file to verify multiple results.
+- Allows manual data entry.
 
-## Comenzar 🚀
+## Start 🚀
 
-Estas instrucciones te permitirán obtener una copia del proyecto en tu local, para desarrollo o testing. 
+These instructions will allow you to get a copy of the project on your local machine, for development or testing.
 
-### Instalación 🔧
+### Install 🔧
 
-1. Clona el repositorio en tu local: 
+1. Clone the repository: 
 ```
 git clone git@github.com:Camilo-Suarez98/excercise-results.git
 ```
 
-2. Ahora entra en el directorio del proyecto /excercise-results
+2. Now, enter the poject directory /excercise-results:
 
 ```
 cd excercise-results
 ```
 
-3. Instala las dependencias:
+3. Install the dependencies:
 
-Asegúrate de tener instalado Node.js:
+Make sure you have Node.js installed:
 
 ```
 sudo apt install nodejs npm
 ```
 
-4. Corre el siguiente comando en los dos repositorios
+4. Run the next command:
 ```
 npm install
 ```
 
-5. Corre el codigo!
+5. Run the code!
 
-Asegurate de estar en el directorio correcto
-
+Make sue you are in the right folder.
 ```
 cd excercise-results
 ```
 
-Una vez ahí, ejecuta el siguiente comando
-
+Once there, execute the next command:
 ```
 npm run dev
 ```
@@ -60,48 +58,41 @@ npm run dev
 - **Camilo Suarez** - _Developer_ - [https://github.com/Camilo-Suarez98](https://github.com/Camilo-Suarez98)
 
 
-### Funcionamiento de la aplicación
+### How the app works
 
-La aplicación permite adjuntar un archivo de excel con información de multiples resultados. Esta es la vista principal
+The app allows you to attach an excel file to verify multiple results with the info. This is the main view:
 
 <img width="818" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/ab79db3c-0823-4405-bc4c-42dc7b00e70f">
 
-Así se ve la aplicación cuando se adjunta el archivo de excel
 
-Esta es el loading previo a la carga de datos
+This is what the app looks like when the excel file is attached, starts with a loader to analyze the results:
 
 <img width="599" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/e3e14f7d-54a4-478a-8f63-2e4c8df52aaf">
 
-Y así se ve cuando cargan los archivos en vista desktop
+And this is what the app looks like when you load the files (Desktop view):
 
 <img width="993" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/0b770424-c1df-4c9e-b237-226def37e749">
 
-Y así se ve cuando cargan los archivos en vista mobile
+This is what the app looks like when you load the files (Mobile view):
 
 <img width="380" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/93074a6a-6be9-4b07-a5e8-0277ea5d8937">
 
-Así se ve cuando hay datos que pueden ser falsos
+This is what it looks like when there is data that may be fake:
 
 <img width="911" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/8e8d2b52-ca32-4f5c-b236-999f01611800">
 
-Inicialmente se ven los primeros 30 resultados, pero se tiene la opción de ver más
+Initially you can see the first 30 results, but you have a button to see more:
 
 <img width="902" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/474504c2-26ec-463c-adcf-e2b556ba0881">
 
-Si el ususario quiere ingresar los datos manualmente puede hacerlo llenando el siguiente formulario:
+If the user wants to enter the data manually he/she can do by filling in the following form:
 
 <img width="679" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/139e609c-98bf-4bba-b340-5c5e63c492cb">
 
-Aqui se ve cuando se ingresan datos el resultado debajo del formulario
+Here you can see the result below the form when entering data:
 
 <img width="960" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/abcc7e51-8ede-4502-8147-c048c23f190c">
 
-Aquí se ve cuando se han ingresado un valor que puede ser correcto y uno que puede ser falso
+Here you see when when you have entered a value that may be correct and one that may be false:
 
 <img width="840" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/e0a918c8-2ad3-430f-a3d9-deb642672d7f">
-
-
-
-
-
-
