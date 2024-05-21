@@ -17,7 +17,8 @@ const ExerciseCard = ({ activity }) => {
     return (
       num !== null
         && num !== undefined
-        ? num.toFixed(2)
+        && typeof num === 'number'
+        ? num?.toFixed(2)
         : '0.00'
     )
   };
