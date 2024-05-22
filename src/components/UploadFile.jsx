@@ -1,7 +1,7 @@
 const UploadFile = ({ onChange }) => {
   return (
     <>
-      <p>Cargue su archivo de excel para continuar</p>
+      <p className="text-xl">Upload your Excel file to continue</p>
       <div className='mt-6'>
         <input type="file" onChange={onChange} />
       </div>

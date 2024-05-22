@@ -1,10 +1,10 @@
 const ManuallyData = ({ onClick }) => {
   return (
-    <p>
+    <p className="text-xl">
       Ó
       {" "}
       <button
-        className='bg-transparent p-0 font-black outline-none text-green-300 transition duration-700 hover:border-none hover:text-green-500'
+        className='bg-transparent p-0 font-black border-none text-green-500 transition duration-500 hover:text-green-300'
         onClick={onClick}
       >
         Click here

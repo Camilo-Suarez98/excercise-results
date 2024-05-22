@@ -15,7 +15,10 @@ function App() {
 
   return (
     <div>
-      <h2 className='text-4xl my-5 text-green-500 font-black'>VerifyFit</h2>
+      <h2 className='text-5xl my-5 text-green-500 font-black p-2 lg:text-7xl'>
+        Verify <span className='text-red-500'>Fit</span> 🏃
+      </h2>
+      <p className='pb-5 text-green-300 text-lg'>App to check whether your walking results are real or fake</p>
       <div>
         <Conditions />
         {activities.length === 0 ?
