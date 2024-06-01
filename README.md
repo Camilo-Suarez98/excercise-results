@@ -62,19 +62,15 @@ npm run dev
 
 The app allows you to attach an excel file to verify multiple results with the info. This is the main view:
 
-<img width="603" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/1c336cb3-e82e-4e43-a26a-67069f9d5f6b">
+<img width="664" alt="image" src="https://github.com/Camilo-Suarez98/exercise-results/assets/68169750/eb67ec83-4b7b-4542-9f42-98bfc7bf65aa">
 
 This is what the app looks like when the excel file is attached, starts with a loader to analyze the results:
 
 <img width="601" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/0a02755c-008f-43d8-92bb-242c94282b4a">
 
-And this is what the app looks like when you load the files (Desktop view):
+And this is what the app looks like when you load the files:
 
-<img width="1015" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/ab657207-74dd-4ed4-95e8-b5bfaea8b826">
-
-This is what the app looks like when you load the files (Mobile view):
-
-<img width="335" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/17a02d7e-79c7-4000-901a-835d6808da4f">
+<img width="1037" alt="image" src="https://github.com/Camilo-Suarez98/exercise-results/assets/68169750/0838e1fa-47cb-4fe4-8f41-e94973f01765">
 
 This is what it looks like when there is data that may be fake:
 
@@ -90,8 +86,8 @@ If the user wants to enter the data manually he/she can do by filling in the fol
 
 Here you can see the result below the form when entering data:
 
-<img width="960" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/abcc7e51-8ede-4502-8147-c048c23f190c">
+<img width="857" alt="image" src="https://github.com/Camilo-Suarez98/exercise-results/assets/68169750/81270f11-7260-4926-b466-e78c5b3b3d47">
 
 Here you see when when you have entered a value that may be correct and one that may be false:
 
-<img width="840" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/e0a918c8-2ad3-430f-a3d9-deb642672d7f">
+<img width="784" alt="image" src="https://github.com/Camilo-Suarez98/exercise-results/assets/68169750/6d72751b-f523-49d1-955d-249c6ebd89bd">
