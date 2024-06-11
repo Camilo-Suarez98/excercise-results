@@ -1,9 +1,9 @@
 # Exercise Result Checker 🏃🏃‍♀️
 
-This project  was developed using ReactJS with TailwindCSS for the Front End.
+This project was developed using ReactJS with TailwindCSS for the Front End.
 
 ## Characteristics of the project:
-- It is an app that allows you to attach an excel file to verify multiple results.
+- It is an app that allows you to attach an Excel file to verify multiple results.
 - Allows manual data entry.
 
 ## Start 🚀
@@ -36,9 +36,9 @@ sudo apt install nodejs npm
 npm install
 ```
 
-5. Run the code!
+5. Run the code!:
 
-Make sue you are in the right folder.
+Make sure you are in the right folder.
 ```
 cd excercise-results
 ```
@@ -49,22 +49,20 @@ npm run dev
 ```
 
 ## Built with 🛠️:
-
 - React: [https://react.dev/](https://react.dev/)
 - TailwindCSS [https://tailwindcss.com/](https://tailwindcss.com/)
 
-## Autor ✒️
-
+## Author ✒️
 - **Camilo Suarez** - _Developer_ - [https://github.com/Camilo-Suarez98](https://github.com/Camilo-Suarez98)
 
 
 ### How the app works
 
-The app allows you to attach an excel file to verify multiple results with the info. This is the main view:
+The app allows you to attach an Excel file to verify multiple results with the info. This is the main view:
 
 <img width="664" alt="image" src="https://github.com/Camilo-Suarez98/exercise-results/assets/68169750/eb67ec83-4b7b-4542-9f42-98bfc7bf65aa">
 
-This is what the app looks like when the excel file is attached, starts with a loader to analyze the results:
+This is what the app looks like when the Excel file is attached, starts with a loader to analyze the results:
 
 <img width="601" alt="image" src="https://github.com/Camilo-Suarez98/excercise-results/assets/68169750/0a02755c-008f-43d8-92bb-242c94282b4a">
 
