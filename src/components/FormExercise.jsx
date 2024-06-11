@@ -50,7 +50,7 @@ const FormExercise = () => {
         <InputForm id="pace" label="Average Pace (m/km)" name="AveragePaceInMinutesPerKilometer" value={activity.AveragePaceInMinutesPerKilometer} handleChange={handleInputChange} />
         <InputForm id="elevation" label="Total Elevation (m)" name="TotalElevationGainInMeters" value={activity.TotalElevationGainInMeters} handleChange={handleInputChange} />
         <InputForm id="heart" label="Heart Rate (ppm)" name="AverageHeartRateInBeatsPerMinute" value={activity.AverageHeartRateInBeatsPerMinute} handleChange={handleInputChange} />
-        <button className="mt-5 transition duration-1000 hover:bg-green-500">Check</button>
+        <button className="mt-5 transition duration-1000 bg-green-500 hover:bg-red-500">Check</button>
       </form>
       <div className="grid gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {
