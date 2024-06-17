@@ -4,7 +4,7 @@ const ManuallyData = ({ onClick }) => {
       Or
       {" "}
       <button
-        className='bg-transparent p-0 font-black border-none text-green-500 transition duration-500 hover:text-green-300'
+        className='bg-transparent p-0 font-black border-none text-green-500 transition duration-500 hover:text-red-500'
         onClick={onClick}
       >
         Click here
